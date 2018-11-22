@@ -1,0 +1,15 @@
+import matplotlib.pyplot as plt
+
+fig,(ax1,ax2)=plt.subplots(2)
+ax1.plot([x for x in range(10)],[x for x in range(10)],color='blue',label='res1')
+ax1.grid()
+ax1.set(title='Result1')
+ax1.set(xlabel='x')
+ax1.legend()
+# ax1.xlabel('x')
+# ax1.ylabel('y')
+ax2.plot([x for x in range(10)],[x**2 for x in range(10)],color='magenta',label='res2')
+ax2.grid()
+ax2.set(title='Result2')
+ax2.legend()
+plt.show()
